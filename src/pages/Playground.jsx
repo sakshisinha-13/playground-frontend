@@ -67,7 +67,8 @@ const Playground = () => {
   const runCode = async () => {
     setLoading(true);
     try {
-      const res = await axios.post("/api/execute", {
+      // const res = await axios.post("/api/execute", {
+      const res = await axios.post("https://playground-backend-oyl1.onrender.com/api/execute", {
         language,
         code,
         input,

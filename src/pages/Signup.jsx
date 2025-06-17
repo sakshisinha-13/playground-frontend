@@ -49,7 +49,8 @@ function Signup() {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/auth/signup",
+        // "http://localhost:5000/api/auth/signup",
+        "https://playground-backend-oyl1.onrender.com/api/auth/signup",
         { username, email, password },
         {
           validateStatus: function (status) {
