@@ -1,70 +1,111 @@
-# Getting Started with Create React App
+# CodePlayground Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Live Demo:** [https://playground-frontend-taupe.vercel.app/login](https://playground-frontend-taupe.vercel.app/login)
 
-## Available Scripts
+This is the frontend of the CodePlayground project — a full-stack coding interview preparation platform with:
 
-In the project directory, you can run:
+* Authentication (Signup/Login)
+* Company-wise interview question filtering
+* Interactive code editor with execution support (JavaScript, Python, C++)
+* Export options: PDF, CSV, and Markdown
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Authentication
 
-### `npm test`
+* Signup & Login using JWT
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Question Curation Dashboard
 
-### `npm run build`
+* Filter questions by:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  * Company
+  * Role
+  * YOE (Years of Experience)
+  * Assessment Type (Online Assessment / Interview)
+  * Topic
+  * Difficulty
+  * Year
+* Pie chart showing topic distribution
+* Toggle between detailed and table views
+* Export questions to PDF, CSV, and Markdown
+* Ticked questions (selection tracking)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Code Playground
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* AceEditor-based editor
+* Supports JavaScript, Python, and C++
+* Custom input/output
+* Backend-integrated code execution
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Folder Structure
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+client/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── exports/
+│   ├── pages/
+│   ├── data/
+│   └── App.js
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Tech Stack
 
-## Learn More
+* React.js
+* Tailwind CSS
+* React Router
+* AceEditor
+* Chart.js
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Deployment
 
-### Code Splitting
+* Frontend: Vercel
+* Backend: Render (not included in this repo)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## Run Locally
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. Clone the repo:
 
-### Making a Progressive Web App
+```bash
+git clone https://github.com/sakshisinha-13/playground-frontend.git
+cd playground-frontend
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+2. Install dependencies:
 
-### Advanced Configuration
+```bash
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+3. Start the development server:
 
-### Deployment
+```bash
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Make sure the backend server is running on `http://localhost:5000`
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Developer
+
+Sakshi Sinha
+
+---
+
+## License
+
+This project is licensed under the MIT License.
